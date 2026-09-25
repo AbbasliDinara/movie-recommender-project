@@ -213,7 +213,7 @@ if go:
                 if "release_date" in extra_cols and pd.notna(movie_row.get("release_date")):
                     meta_bits.append(str(movie_row["release_date"])[:4])
                     ##ILDEN 4 REQEMI GOTUTURUK FILMIN CIXMA TARIXINDEN- mes 2010
-                if "vote_average" in extra_cols and pd.notna(movie_row.get("weighted_avg")):
+                if "weighted_avg" in extra_cols and pd.notna(movie_row.get("weighted_avg")):
                     #meta_bits.append(f"⭐ {movie_row['weighted_avg']}")
                     meta_bits.append(f"⭐ {round(movie_row['weighted_avg'], 1)}")
                     ## bu da imdbsidir filmelrin biz hesbaladigimiz
